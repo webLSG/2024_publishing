@@ -6,55 +6,80 @@
   font-style: normal;
 }
 
+.container {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+}
+
 .card-container {
   display: flex;
-  gap: 20px;
+  width: 440px;
+  height: 540px;
+  border-radius: 12px;
+  background-color: (
+    309deg,
+    rgba(250, 255, 28, 1) 0%,
+    rgba(153, 255, 162, 1) 49%,
+    rgba(255, 156, 6, 1) 100%
+  );
 }
 
 .card {
-  width: 280px;
-  height: 380px;
+  width: 100%;
+  height: 100%;
   border-radius: 12px;
+  padding: 0 22px;
 }
 
-.img1 {
+.img {
+  background-size: cover;
+  object-fit: cover;
+}
+
+.pic1 {
   background-image: url(../travel/busan.jpg);
-  background-size: cover;
 }
 
-.img2 {
+.pic2 {
   background-image: url(../travel/incheon.jpg);
-  background-size: cover;
 }
 
-.img3 {
+.pic3 {
   background-image: url(../travel/jeju.jpg);
-  background-size: cover;
 }
 
-.img4 {
+.pic4 {
   background-image: url(../travel/seoul.jpg);
-  background-size: cover;
 }
 
 .topic,
 .info,
 .description {
   font-family: "yg-jalnan";
+  padding: 25px 15px 30px 15px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 10px;
 }
 
 .topic > span {
   color: #dbdbdb;
   font-size: 12px;
   border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 5px;
 }
 
 .info > span {
   color: white;
-  font-size: 28px;
+  font-size: 38px;
 }
 
 .description > span {
-  font-size: 10px;
+  font-size: 16px;
   color: #dbdbdb;
 }
