@@ -54,6 +54,10 @@ i {
   height: 100px;
 }
 
+.iconFont:hover {
+  cursor: pointer;
+}
+
 .links {
   display: flex;
   flex-direction: row;
@@ -117,7 +121,7 @@ i {
 .google {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   width: 9rem;
   background-color: black;
@@ -135,7 +139,7 @@ i {
 }
 
 .apple > i {
-  color: grey;
+  color: red;
   font-size: 30px;
 }
 
