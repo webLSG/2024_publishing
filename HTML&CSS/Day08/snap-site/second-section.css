@@ -6,7 +6,7 @@
   scroll-snap-align: start;
 
   display: flex;
-  justify-content: center;
+
   align-items: center;
 }
 
@@ -25,6 +25,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .second__contents__title {
@@ -45,7 +47,7 @@
 }
 
 .second__contents__img {
-  width: 100%;
+  width: 1200px;
   height: 650px;
 }
 
