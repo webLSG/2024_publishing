@@ -1,0 +1,358 @@
+header {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(10, 10, 172);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(10, 10, 172);
+  z-index: 1;
+}
+
+.nav__allmenus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.nav__logo--mobile,
+.nav__menubar--mobile {
+  display: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.nav__logo--desktop {
+  width: inherit;
+  color: white;
+  font-family: "JalnanGothic";
+  font-weight: 100;
+  font-size: 28px;
+  padding-top: 5px;
+}
+
+.first__section {
+  width: 100vw;
+  height: 50%;
+}
+
+.first__section--imagecards {
+  display: flex;
+  flex-direction: row;
+}
+
+.first__section--imagecards > img {
+  width: 33%;
+  height: 20%;
+  filter: brightness(0.5);
+  transition: filter 0.5s;
+}
+
+.first__section--imagecards > img:hover {
+  filter: brightness(1);
+  cursor: pointer;
+}
+
+.dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+.dots > i {
+  font-size: 11px;
+  color: #ddd;
+  transition: all 0.5s;
+}
+
+.dots > i:hover {
+  color: black;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* ------------------- second section ---------------------------- */
+
+.second__section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.second__section--inner {
+  max-width: 1200px;
+  width: 100%;
+  height: 30%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 270px 0px;
+}
+
+.second__section--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.second__section--btns {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 50px 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.second__section--cardBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+
+.second__section--showmore {
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+
+.second__section--cardItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.second__section--cardItems > img {
+  width: 100%;
+  height: 351px;
+  object-fit: cover;
+  padding-bottom: 18px;
+  transition: all 0.5s;
+}
+
+.second__section--cardItems > img:hover {
+  filter: brightness(0.5);
+  cursor: pointer;
+}
+
+.second__section--cardItems > span {
+  font-family: "JalnanGothic";
+  padding-bottom: 12px;
+}
+.second__section--cardItems > p {
+  font-size: 12px;
+  font-weight: 600;
+  color: gray;
+}
+
+.second__section--cardItems > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.second__section--container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.second__section--container2 > i {
+  font-size: 28px;
+  padding: 10px;
+  color: #ddd;
+  transition: all 0.5s;
+}
+
+.second__section--container2 > i:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.second__section--products-cardItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 25px;
+}
+
+.second__section--products-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.second__section--products-cardItems > span {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+.second__section--products-cardItems > span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.second__section--products-cardItems > img {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+.second__section--storycardItem {
+  transition: all 0.5s;
+}
+.second__section--storycardItem:hover {
+  cursor: pointer;
+  filter: brightness(0.7);
+}
+
+.second__section--products-cardItems > img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.second__section--stories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second__section--stories-cardcontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.second__section--storycardItem > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.second__section--card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.second__section--card-description > p {
+  font-size: 14px;
+  color: gray;
+  transition: all 0.5s;
+}
+
+.second__section--card-description > .main {
+  font-weight: 600;
+  font-size: 30px;
+  transition: all 0.5s;
+}
+.second__section--card-description > .sub {
+  overflow-block: hidden;
+  font-size: 16px;
+  transition: all 0.5s;
+}
+.second__section--card-description > .date {
+  font-size: 12px;
+}
+
+.second__section--card-description > p:hover,
+.main:hover,
+.sub:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: darkblue;
+}
+
+.eventsbanners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.eventsbanners > img {
+  width: 32%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.second__section--insta-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second__section--instacontainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 15px;
+}
+
+.second__section--instacontainer-item > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.second__section--insta-title > span {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.second__section--insta-title > p {
+  font-size: 20px;
+  padding: 25px 0px 50px 0px;
+}
+
+.second__section--instacontainer-item > .about-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.3;
+  color: white;
+  font-weight: 600;
+  word-break: break-all;
+  display: none;
+  transition: all 0.5s;
+}
+
+.second__section--instacontainer-item > .about-item:hover {
+  display: block;
+  cursor: pointer;
+}
+
+.second__section--insta-showmorebtn {
+  width: fit-content;
+  text-align: center;
+  border-radius: 4px;
+  background-color: darkblue;
+  color: white;
+  padding: 15px 15px;
+  margin-top: 20px;
+}
