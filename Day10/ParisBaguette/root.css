@@ -61,4 +61,34 @@ body {
   .nav__logo--desktop {
     margin: 0 auto;
   }
+
+  .second__section--inner {
+    max-width: 600px;
+  }
+
+  .second__section--cardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .second__section--stories-cardcontainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .second__section--products-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .eventsbanners {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .eventsbanners > img {
+    width: 100%;
+  }
+
+  .second__section--gridcontainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
